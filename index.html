@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="assets/slyles.css"/>
+    <script src="https://kit.fontawesome.com/4a0827858a.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale = 1">
+    <title>MoGo</title>
+</head>
+<body>
+
+
+
+<svg style="display: none;">
+<symbol id="find-icon" viewBox="0 0 512 512">
+    <g>
+        <path d="M344.5,298c15-23.6,23.8-51.6,23.8-81.7c0-84.1-68.1-152.3-152.1-152.3C132.1,64,64,132.2,64,216.3  c0,84.1,68.1,152.3,152.1,152.3c30.5,0,58.9-9,82.7-24.4l6.9-4.8L414.3,448l33.7-34.3L339.5,305.1L344.5,298z M301.4,131.2  c22.7,22.7,35.2,52.9,35.2,85c0,32.1-12.5,62.3-35.2,85c-22.7,22.7-52.9,35.2-85,35.2c-32.1,0-62.3-12.5-85-35.2  c-22.7-22.7-35.2-52.9-35.2-85c0-32.1,12.5-62.3,35.2-85c22.7-22.7,52.9-35.2,85-35.2C248.5,96,278.7,108.5,301.4,131.2z"/>
+    </g>
+</symbol>
+
+<symbol id="cart-icon" viewBox="0 0 446.853 446.853">
+    <g>
+        <path d="M444.274,93.36c-2.558-3.666-6.674-5.932-11.145-6.123L155.942,75.289c-7.953-0.348-14.599,5.792-14.939,13.708
+            c-0.338,7.913,5.792,14.599,13.707,14.939l258.421,11.14L362.32,273.61H136.205L95.354,51.179
+            c-0.898-4.875-4.245-8.942-8.861-10.753L19.586,14.141c-7.374-2.887-15.695,0.735-18.591,8.1c-2.891,7.369,0.73,15.695,8.1,18.591
+            l59.491,23.371l41.572,226.335c1.253,6.804,7.183,11.746,14.104,11.746h6.896l-15.747,43.74c-1.318,3.664-0.775,7.733,1.468,10.916
+            c2.24,3.184,5.883,5.078,9.772,5.078h11.045c-6.844,7.617-11.045,17.646-11.045,28.675c0,23.718,19.299,43.012,43.012,43.012
+            s43.012-19.294,43.012-43.012c0-11.028-4.201-21.058-11.044-28.675h93.777c-6.847,7.617-11.047,17.646-11.047,28.675
+            c0,23.718,19.294,43.012,43.012,43.012c23.719,0,43.012-19.294,43.012-43.012c0-11.028-4.2-21.058-11.042-28.675h13.432
+            c6.6,0,11.948-5.349,11.948-11.947c0-6.6-5.349-11.948-11.948-11.948H143.651l12.902-35.843h216.221
+            c6.235,0,11.752-4.028,13.651-9.96l59.739-186.387C447.536,101.679,446.832,97.028,444.274,93.36z M169.664,409.814
+            c-10.543,0-19.117-8.573-19.117-19.116s8.574-19.117,19.117-19.117s19.116,8.574,19.116,19.117S180.207,409.814,169.664,409.814z
+             M327.373,409.814c-10.543,0-19.116-8.573-19.116-19.116s8.573-19.117,19.116-19.117s19.116,8.574,19.116,19.117
+            S337.916,409.814,327.373,409.814z"/>
+    </g>
+</symbol>
+
+<symbol id="arrow" viewBox="0 0 32 32">
+    <g>
+        <path d="M7.701,14.276l9.586-9.585c0.879-0.878,2.317-0.878,3.195,0l0.801,0.8c0.878,0.877,0.878,2.316,0,3.194  L13.968,16l7.315,7.315c0.878,0.878,0.878,2.317,0,3.194l-0.801,0.8c-0.878,0.879-2.316,0.879-3.195,0l-9.586-9.587  C7.229,17.252,7.02,16.62,7.054,16C7.02,15.38,7.229,14.748,7.701,14.276z"/>
+    </g>
+</symbol>
+</svg>
+
+<!-- Header -->
+<header class="header" id="header">
+    <div class="container">
+
+        <div class="header__inner">
+            <div class="header__logo" data-scroll="#intro">MoGo</div>
+            <div class="nav" id="nav">
+                <a class="nav__link" href="#" data-scroll="#about">About</a>
+                <a class="nav__link" href="#" data-scroll="#services">services</a>
+                <a class="nav__link" href="#" data-scroll="#works">work</a>
+                <a class="nav__link" href="#" data-scroll="#blog">blog</a>
+                <a class="nav__link" href="#" data-scroll="#footer">contact</a>
+                <a class="nav__link" href="#" data-scroll="">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a class="nav__link" href="#" target="_blank">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+
+            <button class="nav-toggle" id="nav-toggle" type="button">
+                <img src="assets/img/burger-nav.svg" alt="nav-toggle-icon">
+            </button>
+        </div>
+
+    </div>
+</header>
+
+
+<div class="page">
+<!-- Intro -->
+<div class="intro" id="intro">
+    <div class="container">
+        <div class="intro__inner">
+
+            <h2 class="intro__suptitle">Creative Template</h2>
+            <h1 class="intro__title">Welcome to MoGo</h1>
+
+            <a class="intro__btn" href="#" target="_blank">Learn more</a>
+
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="container">
+            <div class="slider__inner">
+
+                <div class="slider__item active">
+                    <span class="slider__num">01</span>
+                    <span class="slider__text">Intro</span>
+                </div>
+                <div class="slider__item">
+                    <span class="slider__num">02</span>
+                    <span class="slider__text">Work</span>
+                </div>
+                <div class="slider__item">
+                    <span class="slider__num">03</span>
+                    <span class="slider__text">About</span>
+                </div>
+                <div class="slider__item">
+                    <span class="slider__num">04</span>
+                    <span class="slider__text">Contacts</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div> <!-- /.intro -->
+
+
+<!-- About -->
+<section class="section" id="about">
+    <div class="container">
+
+        <div class="section__header">
+            <h3 class="section__suptitle">What we do</h3>
+            <h2 class="section__title">Story about us</h2>
+
+            <div class="section__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card__item">
+                <div class="card__inner">
+
+                    <div class="card__img">
+                        <img src="assets/img/about/about-1.jpg" alt="">
+                    </div>
+
+                    <div class="card__content">
+                        <img src="assets/img/about/card_icon.png" alt="">
+                        <div class="card__text">super team</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card__item">
+                <div class="card__inner">
+
+                    <div class="card__img">
+                        <img src="assets/img/about/about-2.jpg" alt="">
+                    </div>
+
+                    <div class="card__content">
+                        <img src="assets/img/about/card_icon.png" alt="">
+                        <div class="card__text">super team</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card__item">
+                <div class="card__inner">
+
+                    <div class="card__img">
+                        <img src="assets/img/about/about-3.jpg" alt="">
+                    </div>
+
+                    <div class="card__content">
+                        <img src="assets/img/about/card_icon.png" alt="">
+                        <div class="card__text">super team</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Statisctic -->
+<div class="statisctics">
+    <div class="container">
+
+        <div class="stat__inner">
+            <div class="stat__item">
+                <div class="stat__num">42</div>
+                <div class="stat__text">Web Design Projects</div>
+            </div>
+            <div class="stat__item">
+                <div class="stat__num">123</div>
+                <div class="stat__text">happy client</div>
+            </div>
+            <div class="stat__item">
+                <div class="stat__num">15</div>
+                <div class="stat__text">award winner</div>
+            </div>
+            <div class="stat__item">
+                <div class="stat__num">99</div>
+                <div class="stat__text">cup of coffee</div>
+            </div>
+            <div class="stat__item">
+                <div class="stat__num">24</div>
+                <div class="stat__text">members</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Services -->
+<section class="section" id="services">
+    <div class="container">
+
+        <div class="section__header">
+            <h3 class="section__suptitle">We work with</h3>
+            <h2 class="section__title">Amazing Services</h2>
+        </div>
+
+        <div class="services">
+            <div class="services__item services__item--border">
+                <img class="services__icon" src="assets/img/services/services_1.png" alt="">
+                <div class="services__title">Photography</div>
+                <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+            </div>
+
+            <div class="services__item services__item--border">
+                <img class="services__icon" src="assets/img/services/services_2.png" alt="">
+                <div class="services__title">Web Design</div>
+                <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+            </div>
+
+            <div class="services__item services__item--border">
+                <img class="services__icon" src="assets/img/services/services_3.png" alt="">
+                <div class="services__title">Creativity</div>
+                <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+            </div>
+
+            <div class="services__item">
+                <img class="services__icon" src="assets/img/services/services_4.png" alt="">
+                <div class="services__title">seo</div>
+                <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+            </div>
+
+            <div class="services__item">
+                <img class="services__icon" src="assets/img/services/services_5.png" alt="">
+                <div class="services__title">Css/Html</div>
+                <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+            </div>
+
+            <div class="services__item">
+                <img class="services__icon" src="assets/img/services/services_6.png" alt="">
+                <div class="services__title">digital</div>
+                <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+
+<!-- Devices -->
+<section class="section devices--bg">
+    <div class="container">
+
+        <div class="section__header">
+            <h3 class="section__suptitle">For all devices</h3>
+            <h2 class="section__title">Unique design</h2>
+        </div>
+
+        <div class="devices">
+            <img class="devices__item"  src="assets/img/devices/ipad.png" alt="">
+            <img class="devices__item devices__item--iphone" src="assets/img/devices/iphone.png" alt="">
+        </div>
+
+    </div>
+</section>
+
+
+<!-- We Do -->
+<section class="section">
+    <div class="container">
+
+        <div class="section__header">
+            <h3 class="section__suptitle">What we do</h3>
+            <h2 class="section__title">Story about us</h2>
+
+            <div class="section__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+
+        <div class="wedo">
+            <div class="wedo__item">
+                <img class="wedo__img" src="assets/img/wedo.jpg" alt="">
+            </div>
+
+            <div class="wedo__item">
+                <div class="accordion">
+                    <div class="accordion__item">
+
+                        <div class="accordion__header" data-collapse="#wedo-1">
+                            <img class="accordion__icon"  src="assets/img/services/services_1.png" alt="">
+                            <div class="accordion__title">Photography</div>
+
+                            <svg class="accordion__arrow">
+                                <use xlink:href="#arrow"></use>
+                            </svg>
+                        </div>
+
+                        <div class="accordion__content" id="wedo-1">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="accordion__item">
+                        <div class="accordion__header" data-collapse="#wedo-2">
+                            <img class="accordion__icon"  src="assets/img/services/services_2.png" alt="">
+                            <div class="accordion__title">creativity</div>
+
+                            <svg class="accordion__arrow">
+                                <use xlink:href="#arrow"></use>
+                            </svg>
+                        </div>
+                        <div class="accordion__content" id="wedo-2">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion__item">
+                        <div class="accordion__header" data-collapse="#wedo-3">
+                            <img class="accordion__icon"  src="assets/img/services/services_3.png" alt="">
+                            <div class="accordion__title">web design</div>
+
+                            <svg class="accordion__arrow">
+                                <use xlink:href="#arrow"></use>
+                            </svg>
+                        </div>
+                        <div class="accordion__content" id="wedo-3">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Reviews -->
+<div class="section grey--bg">
+    <div class="container">
+
+        <div class="reviews">
+            <svg class="slick-arrow slick-prev">
+                <use xlink:href="#arrow"></use>
+            </svg>
+            <svg class="slick-arrow slick-next">
+                <use xlink:href="#arrow"></use>
+            </svg>
+
+            <div data-slider>
+                <div>
+                    <div class="reviews__item">
+                        <img class="reviews__photo" src="assets/img/reviews.png" alt="">
+                        <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                        <div class="reviews__author">Jon Doe</div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="reviews__item">
+                        <img class="reviews__photo" src="assets/img/reviews.png" alt="">
+                        <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                        <div class="reviews__author">Jon Doe</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Team -->
+<section class="section">
+    <div class="container">
+
+        <div class="section__header">
+            <h3 class="section__suptitle">Who we are</h3>
+            <h2 class="section__title">Meet our team</h2>
+
+            <div class="section__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+
+        <div class="card">
+
+            <div class="card__item">
+                <div class="card__inner">
+                    <div class="card__img">
+                        <img src="assets/img/team/team_1.jpg" alt="">
+                    </div>
+                    <div class="card__content">
+                        <div class="social">
+
+                            <a class="social__item" href="#" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card__info">
+                    <div class="card__name">Matthew Dix</div>
+                    <div class="card__prof">Graphic Design</div>
+                </div>
+            </div>
+
+            <div class="card__item">
+                <div class="card__inner">
+                    <div class="card__img">
+                        <img src="assets/img/team/team_2.jpg" alt="">
+                    </div>
+                    <div class="card__content">
+                        <div class="social">
+
+                            <a class="social__item" href="#" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card__info">
+                    <div class="card__name">Christopher Campbell</div>
+                    <div class="card__prof">Branding/UX design</div>
+                </div>
+            </div>
+
+            <div class="card__item">
+                <div class="card__inner">
+                    <div class="card__img">
+                        <img src="assets/img/team/team_3.jpg" alt="">
+                    </div>
+                    <div class="card__content">
+                        <div class="social">
+
+                            <a class="social__item" href="#" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                            <a class="social__item" href="#" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card__info">
+                    <div class="card__name">Michael Fertig</div>
+                    <div class="card__prof">Developer</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Logos -->
+<div class="section  grey--bg">
+    <div class="container">
+
+        <div class="logos">
+            <div class="logos__item">
+                <img class="logos__img" src="assets/img/logos/1.png" alt="">
+            </div>
+            <div class="logos__item">
+                <img class="logos__img" src="assets/img/logos/2.png" alt="">
+            </div>
+            <div class="logos__item">
+                <img class="logos__img" src="assets/img/logos/3.png" alt="">
+            </div>
+            <div class="logos__item">
+                <img class="logos__img" src="assets/img/logos/4.png" alt="">
+            </div>
+            <div class="logos__item">
+                <img class="logos__img" src="assets/img/logos/5.png" alt="">
+            </div>
+            <div class="logos__item">
+                <img class="logos__img" src="assets/img/logos/6.png" alt="">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Works -->
+<section class="section" id="works">
+    <div class="container">
+
+        <div class="section__header">
+            <h3 class="section__suptitle">What we do</h3>
+            <h2 class="section__title">some of our work</h2>
+
+            <div class="section__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="works">
+        <div class="works__col">
+            <div class="works__item">
+                <img class="works__img" src="assets/img/works/works_1.jpg" alt="">
+                <div class="works__info">
+                    <div class="works__title">creatively designed</div>
+                    <div class="works__text">Lorem ipsum dolor sit</div>
+                </div>
+            </div>
+            <div class="works__item">
+                <img class="works__img" src="assets/img/works/works_2.jpg" alt="">
+                <div class="works__info">
+                    <div class="works__title">creatively designed</div>
+                    <div class="works__text">Lorem ipsum dolor sit</div>
+                </div>
+            </div>
+        </div>
+        <div class="works__col">
+            <div class="works__item">
+                <img class="works__img" src="assets/img/works/works_3.jpg" alt="">
+                <div class="works__info">
+                    <div class="works__title">creatively designed</div>
+                    <div class="works__text">Lorem ipsum dolor sit</div>
+                </div>
+            </div>
+            <div class="works__item">
+                <img class="works__img" src="assets/img/works/works_4.jpg" alt="">
+                <div class="works__info">
+                    <div class="works__title">creatively designed</div>
+                    <div class="works__text">Lorem ipsum dolor sit</div>
+                </div>
+            </div>
+        </div>
+        <div class="works__col">
+            <div class="works__item">
+                <img class="works__img" src="assets/img/works/works_5.jpg" alt="">
+                <div class="works__info">
+                    <div class="works__title">creatively designed</div>
+                    <div class="works__text">Lorem ipsum dolor sit</div>
+                </div>
+            </div>
+        </div>
+        <div class="works__col">
+            <div class="works__item">
+                <img class="works__img" src="assets/img/works/works_6.jpg" alt="">
+                <div class="works__info">
+                    <div class="works__title">creatively designed</div>
+                    <div class="works__text">Lorem ipsum dolor sit</div>
+                </div>
+            </div>
+            <div class="works__item">
+                <img class="works__img" src="assets/img/works/works_7.jpg" alt="">
+                <div class="works__info">
+                    <div class="works__title">creatively designed</div>
+                    <div class="works__text">Lorem ipsum dolor sit</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Reviews 2-->
+<div class="section">
+    <div class="container">
+
+        <div class="reviews">
+            <svg class="slick-arrow slick-prev">
+                <use xlink:href="#arrow"></use>
+            </svg>
+            <svg class="slick-arrow slick-next">
+                <use xlink:href="#arrow"></use>
+            </svg>
+
+            <div data-slider>
+                <div>
+                    <div class="reviews__item">
+                        <img class="reviews__photo" src="assets/img/reviews.png" alt="">
+                        <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                        <div class="reviews__author">Jon Doe</div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="reviews__item">
+                        <img class="reviews__photo" src="assets/img/reviews.png" alt="">
+                        <div class="reviews__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                        <div class="reviews__author">Jon Doe</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- clients -->
+<section class="section clients-bg" >
+    <div class="container">
+
+        <div class="section__header">
+            <h3 class="section__suptitle">Happy Clients</h3>
+            <h2 class="section__title">What people say</h2>
+        </div>
+
+        <div class="clients">
+            <div class="client__item">
+
+                <img class="client__photo" src="assets/img/clients/client_1.png" alt="">
+
+                <div class="client__name">Matthew Dix</div>
+                <div class="client__prof">Graphic Design</div>
+                <div class="client__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
+
+            </div>
+            <div class="client__item">
+
+                <img class="client__photo" src="assets/img/clients/client_2.png" alt="">
+                
+                <div class="client__name">Nick Karvounis</div>
+                <div class="client__prof">Graphic Design</div>
+                <div class="client__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
+
+            </div>
+            <div class="client__item">
+
+                <img class="client__photo" src="assets/img/clients/client_3.png" alt="">
+                
+                <div class="client__name">Jaelynn Castillo</div>
+                <div class="client__prof">Graphic Design</div>
+                <div class="client__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
+
+            </div>
+            <div class="client__item">
+
+                <img class="client__photo" src="assets/img/clients/client_4.png" alt="">
+                
+                <div class="client__name">Mike Petrucci</div>
+                <div class="client__prof">Graphic Design</div>
+                <div class="client__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Blog -->
+<section class="section" id="blog" > 
+    <div class="container">
+
+        <div class="section__header">
+            <h3 class="section__suptitle">Our stories</h3>
+            <h2 class="section__title">Latest blog</h2>
+        </div>
+
+        <div class="blog">
+            <div class="blog__item">
+                <div class="blog__photo">
+                    <a href="#" target="_blank">
+                        <img class="blog__img" src="assets/img/blog/blog_1.jpg" alt="">
+                    </a>
+                    <div class="blog__date">
+                        <span>15</span> Jan
+                    </div>
+                </div>
+
+                <div class="blog__content">
+                    <div class="blog__title">
+                        <a href="#" target="_blank">Lorem ipsum dolor sit amet</a>
+                    </div>
+                    <div class="blog__text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+
+                <div class="blog__stat">
+                    <span><i class="far fa-comment-dots"></i>542</span>
+                    <span><i class="fas fa-eye"></i>17</span>
+                </div>
+            </div>
+
+            <div class="blog__item">
+                <div class="blog__photo">
+                    <a href="#" target="_blank">
+                        <img class="blog__img" src="assets/img/blog/blog_2.jpg" alt="">
+                    </a>
+                    <div class="blog__date">
+                        <span>14</span> Jan
+                    </div>
+                </div>
+
+                <div class="blog__content">
+                    <div class="blog__title">
+                        <a href="#" target="_blank">sed do eiusmod tempor</a>
+                    </div>
+                    <div class="blog__text">Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+
+                <div class="blog__stat">
+                    <span><i class="far fa-comment-dots"></i>942</span>
+                    <span><i class="fas fa-eye"></i>42</span>
+                </div>
+            </div>
+
+            <div class="blog__item">
+                <div class="blog__photo">
+                    <a href="#" target="_blank">
+                        <img class="blog__img" src="assets/img/blog/blog_3.jpg" alt="">
+                    </a>
+                    <div class="blog__date">
+                        <span>12</span> Jan
+                    </div>
+                </div>
+
+                <div class="blog__content">
+                    <div class="blog__title">
+                        <a href="#" target="_blank">incididunt ut labore et dolore</a>
+                    </div>
+                    <div class="blog__text">Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+
+                <div class="blog__stat">
+                    <span><i class="far fa-comment-dots"></i>156</span>
+                    <span><i class="fas fa-eye"></i>98</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Map -->
+<div class="section map-bg"> 
+    <div class="container">
+
+        <div class="map">
+            <i class="fas fa-map-marker-alt"></i>
+            <a class="map__text" href="#" target="_blank">Open map</a>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="footer" id="footer">
+    <div class="container">
+
+        <div class="footer__inner">
+            <div class="footer__col footer__col--one">
+                <div class="footer__logo">MoGo</div>
+                <div class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+
+                <div class="footer__social">
+                    <div class="footer__social-header">
+                        <b>15k</b> followers
+                    </div>
+                    <div class="footer__social-content">
+                        Follow Us: 
+                        <a href="#" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form action="/" class="subscribe" method="post">
+                    <input class="subscribe__input" type="email" placeholder="Your Email...">
+                    <button class="subscribe__btn" type="submit">subscribe</button>
+                </form>
+            </div>
+
+            <div class="footer__col footer__col--two">
+                <div class="footer__title">Blogs</div>
+
+                <div class="blogs">
+                    <div class="blogs__item">
+                        <img class="blogs__img" src="assets/img/footer_blogs/blogs_1.jpg" alt="">
+
+                        <div class="blogs__content">
+                            <a class="blogs__title" href="#" target="_blank" >Lorem ipsum dolor sit amet, consectetur adipiscing</a>
+                            <div class="blogs__date">Jan 9, 2016</div>
+                        </div>
+                    </div>
+
+                    <div class="blogs__item">
+                        <img class="blogs__img" src="assets/img/footer_blogs/blogs_2.jpg" alt="">
+
+                        <div class="blogs__content">
+                            <a class="blogs__title" href="#" target="_blank" >Consectetur adipiscing elit, sed do eiusmod tempor</a>
+                            <div class="blogs__date">Jan 9, 2016</div>
+                        </div>
+                    </div>
+
+                    <div class="blogs__item">
+                        <img class="blogs__img" src="assets/img/footer_blogs/blogs_3.jpg" alt="">
+
+                        <div class="blogs__content">
+                            <a class="blogs__title" href="#" target="_blank" >sed do eiusmod tempor incididunt ut labore</a>
+                            <div class="blogs__date">Jan 9, 2016</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__col footer__col--three">
+                <div class="footer__title">Instagram</div>
+
+                <div class="instagram">
+                    <a class="instagram__item" href="#">
+                        <img src="assets/img/instagram/1.jpg" alt="">
+                    </a>
+                    <a class="instagram__item" href="#" target="_blank">
+                        <img src="assets/img/instagram/2.jpg" alt="">
+                    </a>
+                    <a class="instagram__item" href="#" target="_blank">
+                        <img src="assets/img/instagram/3.jpg" alt="">
+                    </a>
+                    <a class="instagram__item" href="#" target="_blank">
+                        <img src="assets/img/instagram/4.jpg" alt="">
+                    </a>
+                    <a class="instagram__item" href="#" target="_blank">
+                        <img src="assets/img/instagram/5.jpg" alt="">
+                    </a>
+                    <a class="instagram__item" href="#" target="_blank">
+                        <img src="assets/img/instagram/6.jpg" alt="">
+                    </a>
+                    <a class="instagram__item" href="#" target="_blank">
+                        <img src="assets/img/instagram/7.jpg" alt="">
+                    </a>
+                    <a class="instagram__item" href="#" target="_blank">
+                        <img src="assets/img/instagram/8.jpg" alt="">
+                    </a>
+                    <a class="instagram__item" href="#" target="_blank">
+                        <img src="assets/img/instagram/9.jpg" alt="">
+                    </a>
+                </div> <!-- /.instagram -->
+                <div class="blogs__text">View more photos</div>
+            </div>
+        </div> <!-- /.footer__inner -->
+
+        <div class="copyright">
+            © 2016 MoGo free PSD template by <span>Laaqiq</span>
+        </div>
+
+    </div> <!-- /.container -->
+</footer>
+</div>
+
+
+
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Slick JS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="assets/app.js"></script>
+
+</body>
+</html>
